@@ -439,6 +439,8 @@ dependency information to support Cabal's recompilation checker in deciding whet
 it needs to rerun the hooks or not. This is particularly relevant when building documentation,
 as one doesn't want to have to run the hooks twice in the workflow `cabal build && cabal haddock`.
 
+* An example bug caused by having to duplicate the "build" hook in all phases - https://github.com/haskell/cabal/issues/9401
+
 ## Copy hooks
 
 The `copy` hooks run before and after the copy phase, which moves build artifacts
@@ -527,7 +529,7 @@ This repository fulfills several goals:
 * Testing
   - The CI in the repository ensures that our patches continue to build against
     migrated packages, as the design of the `Hooks` interface evolves.
-* Overlay 
+* Overlay
   - Users can use the repository as an overlay like `head.hackage`, allowing them to
     experiment with the new `Hooks` design locally.
   - The overlay will also allow us to test new features of `cabal-install` which rely on
