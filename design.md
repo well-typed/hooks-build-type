@@ -1,7 +1,10 @@
+Matthew Pickering, Sam Derbyshire, Duncan Coutts (Well-Typed LLP)
+
 In this document we propose a design of a new `Hooks` build type,
 which is intended to replace the `Custom` build type.
 
-[toc]
+This work has been carried out by Well-Typed LLP thanks to investment from the Sovereign Tech Fund.
+
 
 # Motivation
 

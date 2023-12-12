@@ -1,0 +1,26 @@
+cabal-version:      3.4
+name:               hackage-survey
+version:            0.1.0.0
+synopsis:           Fetch top packages using Custom build-type
+-- description:
+license:            BSD-3-Clause
+license-file:       LICENSE
+author:             Rodrigo Mesquita
+maintainer:         rodrigo@well-typed.com
+-- copyright:
+build-type:         Simple
+-- extra-source-files:
+
+common warnings
+    ghc-options: -Wall
+
+executable hackage-survey
+    import:           warnings
+    main-is:          Main.hs
+    -- other-modules:
+    -- other-extensions:
+    build-depends:    base ^>=4.18.1.0,
+                      servant >= 0.20.1 && < 0.21,
+                      servant-client >= 0.20 && < 0.21,
+                      aeson, http-client, text, async, async-pool
+    default-language: GHC2021

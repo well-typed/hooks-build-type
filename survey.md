@@ -1,8 +1,13 @@
 # Stackage Setup.hs survey
 
+Matthew Pickering, Sam Derbyshire (Well-Typed LLP)
+
 A primary goal of the `Hooks` build-type is to replace the `Custom` build-type.
 In order to inform the design of the `Hooks` build-type, we want to analyse
 what people use the `Custom` build-type for.
+
+This work has been carried out by Well-Typed LLP thanks to investment from the Sovereign Tech Fund.
+
 
 # Methodology
 
